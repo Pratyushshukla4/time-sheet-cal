@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time-Sheet</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+</head>
+<body>
+    <div class="main-container">
+        <h1 class="head">Time Sheet Calculator</h1>
+        <div class="cal-container">
+            <div class="colom-head colom-heading">
+                 <span class="day-head fonts">
+                     day
+                 </span>
+                 <span class="start-hour fonts">
+                   starting time
+                 </span>
+                 <span class="ending-time fonts">
+                   Ending time
+                 </span>
+                 <span class="break-time fonts">
+                    Break
+                 </span>
+                 <span class="total-time fonts">
+                    total
+                 </span>
+            </div>
+            <!-- monday  -->
+            <div class="colom-head">
+                <span class="day-head fonts">
+                    Mon
+                </span>
+                <span class="start-hour fonts">
+
+                    <div class="enter-time">
+
+                        <div class="enter-t1 ">
+                            <input id="start-hour-1" placeholder="8" width="4px" height="3px" value="" type="text" class="time1 text">
+                        </div>
+
+                        <span class="semi">:</span>
+
+                        <div class="enter-t1 ">
+                            <input value="" id="start-minute-1" placeholder="00" type="text" class="time1 text">
+                        </div> 
+
+                        <div class="ampm">
+                            <select id="start-break-1"  name="cars" class="ampm">
+                                <option class="am" value="0">AM</option>
+                                <option class="pm" value="1">PM</option>
+                              </select>
+                        </div>
+
+                    </div>
+                 
+                </span>
+                <span class="ending-time fonts">
+                    <div class="enter-time">
+
+                        <div class="enter-t1 ">
+                            <input value="" id="end-hour-1" placeholder="5" width="4px" height="3px" type="text" class="time1 text">
+                        </div>
+
+                        <span class="semi">:</span>
+
+                        <div class="enter-t1 ">
+                            <input value=""  id="end-minute-1" placeholder="00"type="text" class="time1 text">
+                        </div> 
+
+                        <div class="ampm">
+                            <select  id="end-break-1" name="cars" class="ampm">
+                                <option class="am" value="0">AM</option>
+                                <option class="pm" value="1">PM</option>
+                              </select>
+                        </div>
+
+                    </div>
+                </span>
+                <span class="break-time fonts bk-tm">
+                    <div class="en-tm">
+
+                        <div class="enter-t1 ">
+                            <input id="minus-hour-1" placeholder="2" width="4px" value="" height="3px" type="text" class="time1 text">
+                        </div>
+
+                        <span class="semi">:</span>
+
+                        <div class="enter-t1 ">
+                            <input  value="" id="minus-minute-1" placeholder="00" type="text" class="time1 text">
+                        </div> 
+
+                        <!-- <div class="ampm">
+                            <select  name="cars" class="ampm">
+                                <option class="am" value="am">AM</option>
+                                <option class="am" value="pm">PM</option>
+                              </select>
+                        </div> -->
+
+                    </div>
+                </span>
+                <span id="total-1" class="total-time fonts">
+                   0.00
+                </span>
+           </div>
+           <!-- tuesday  -->
+           <div class="colom-head th">
+            <span class="day-head fonts">
+                Tue
+            </span>
+            <span class="start-hour fonts">
+                <div class="enter-time">
+
+                    <div class="enter-t1 ">
+                        <input id="start-hour-2" placeholder="8" width="4px" height="3px" type="text" class="time1 text">
+                    </div>
+
+                    <span class="semi">:</span>
+
+                    <div class="enter-t1 ">
+                        <input id="start-minute-2" placeholder="00" type="text" class="time1 text">
+                    </div> 
+
+                    <div class="ampm">
+                        <select id="start-break-2"  name="cars" class="ampm">
+                            <option class="am" value="0">AM</option>
+                            <option class="am" value="1">PM</option>
+                          </select>
+                    </div>
+
+                </div>
+            </span>
+            <span class="ending-time fonts">
+                <div class="enter-time">
+
+                    <div class="enter-t1 ">
+                        <input id="end-hour-2" placeholder="5" width="4px" height="3px" type="text" class="time1 text">
+                    </div>
+
+                    <span class="semi">:</span>
+
+                    <div class="enter-t1 ">
+                        <input id="end-minute-2" placeholder="00" type="text" class="time1 text">
+                    </div> 
+
+                    <div class="ampm">
+                        <select id="end-break-2"  name="cars" class="ampm">
+                            <option class="am" value="0">AM</option>
+                            <option class="am" value="1">PM</option>
+                          </select>
+                    </div>
+
+                </div>
+            </span>
+            <span class="break-time fonts">
+                <div class="en-tm">
+
+                    <div class="enter-t1 ">
+                        <input id="minus-hour-2" placeholder="5" width="4px" height="3px" type="text" class="time1 text">
+                    </div>
+
+                    <span class="semi">:</span>
+
+                    <div class="enter-t1 ">
+                        <input id="minus-minute-2"   placeholder="00"type="text" class="time1 text">
+                    </div> 
+
+                    <!-- <div class="ampm">
+                        <select  name="cars" class="ampm">
+                            <option class="am" value="am">AM</option>
+                            <option class="am" value="pm">PM</option>
+                          </select>
+                    </div> -->
+
+                </div>
+            </span>
+            <span id="total-2" class="total-time fonts">
+               0.00
+            </span>
+       </div>
+       <!-- wednesday  -->
+       <div class="colom-head tyy">
+        <span class="day-head fonts">
+           wed
+        </span>
+        <span class="start-hour fonts  tp">
+            <div class="enter-time">
+
+                <div class="enter-t1 ">
+                    <input id="start-hour-3" placeholder="8" width="4px" height="3px" type="text" class="time1 text">
+                </div>
+
+                <span class="semi">:</span>
+
+                <div class="enter-t1 ">
+                    <input id="start-minute-3" placeholder="00" type="text" class="time1 text">
+                </div> 
+
+                <div class="ampm">
+                    <select id="start-break-3"  name="cars" class="ampm">
+                        <option class="am" value="0">AM</option>
+                        <option class="am" value="1">PM</option>
+                      </select>
+                </div>
+
+            </div>
+        </span>
+        <span class="ending-time fonts">
+            <div class="enter-time">
+
+                <div class="enter-t1 ">
+                    <input id="end-hour-3" placeholder="5" width="4px" height="3px" type="text" class="time1 text">
+                </div>
+
+                <span class="semi">:</span>
+
+                <div class="enter-t1 ">
+                    <input id="end-minute-3"  placeholder="00" type="text" class="time1 text">
+                </div> 
+
+                <div class="ampm">
+                    <select id="end-break-3"  name="cars" class="ampm">
+                        <option class="am" value="0">AM</option>
+                        <option class="am" value="1">PM</option>
+                      </select>
+                </div>
+
+            </div>
+        </span>
+        <span class="break-time fonts">
+            <div class="en-tm">
+
+                <div class="enter-t1 ">
+                    <input id="minus-hour-3" placeholder="2" width="4px" height="3px" type="text" class="time1 text">
+                </div>
+
+                <span class="semi">:</span>
+
+                <div class="enter-t1 ">
+                    <input id="minus-minute-3" placeholder="00" type="text" class="time1 text">
+                </div> 
+
+                <!-- <div class="ampm">
+                    <select  name="cars" class="ampm">
+                        <option class="am" value="am">AM</option>
+                        <option class="am" value="pm">PM</option>
+                      </select>
+                </div> -->
+
+            </div>
+        </span>
+        <span id="total-3" class="total-time fonts">
+           0.00
+        </span>
+   </div>
+   <!-- thursday  -->
+   <div class="colom-head th">
+    <span class="day-head fonts">
+       Thu
+    </span>
+    <span class="start-hour fonts">
+        <div class="enter-time">
+
+            <div class="enter-t1 ">
+                <input id="start-hour-4" placeholder="8" width="4px" height="3px" type="text" class="time1 text">
+            </div>
+
+            <span class="semi">:</span>
+
+            <div class="enter-t1 ">
+                <input id="start-minute-4" placeholder="00" type="text" class="time1 text">
+            </div> 
+
+            <div class="ampm">
+                <select id="start-break-4"  name="cars" class="ampm">
+                    <option class="am" value="0">AM</option>
+                    <option class="am" value="1">PM</option>
+                  </select>
+            </div>
+
+        </div>
+    </span>
+    <span class="ending-time fonts">
+        <div class="enter-time">
+
+            <div class="enter-t1 ">
+                <input id="end-hour-4" placeholder="5" width="4px" height="3px" type="text" class="time1 text">
+            </div>
+
+            <span class="semi">:</span>
+
+            <div class="enter-t1 ">
+                <input id="end-minute-4" placeholder="00" type="text" class="time1 text">
+            </div> 
+
+            <div class="ampm">
+                <select  id="end-break-4" name="cars" class="ampm">
+                    <option class="am" value="0">AM</option>
+                    <option class="am" value="1">PM</option>
+                  </select>
+            </div>
+
+        </div>
+    </span>
+    <span class="break-time fonts">
+        <div class="en-tm">
+
+            <div class="enter-t1 ">
+                <input id="minus-hour-4" placeholder="6"  width="4px" height="3px" type="text" class="time1 text">
+            </div>
+
+            <span class="semi">:</span>
+
+            <div class="enter-t1 ">
+                <input id="minus-minute-4" placeholder="00" type="text" class="time1 text">
+            </div> 
+
+            <!-- <div class="ampm">
+                <select  name="cars" class="ampm">
+                    <option class="am" value="am">AM</option>
+                    <option class="am" value="pm">PM</option>
+                  </select>
+            </div> -->
+
+        </div>
+    </span>
+    <span id="total-4" class="total-time fonts">
+       0.00
+    </span>
+</div>
+<!-- friday  -->
+<div class="colom-head ">
+    <span class="day-head fonts">
+        
+
+           Fri 
+
+        
+    </span>
+    <span class="start-hour fonts">
+        <div class="enter-time">
+
+            <div class="enter-t1 ">
+                <input id="start-hour-5" placeholder="8" width="4px" height="3px" type="text" class="time1 text">
+            </div>
+
+            <span class="semi">:</span>
+
+            <div class="enter-t1 ">
+                <input id="start-minute-5" placeholder="00" type="text" class="time1 text">
+            </div> 
+
+            <div class="ampm">
+                <select id="start-break-5"  name="cars" class="ampm">
+                    <option class="am" value="0">AM</option>
+                    <option class="am" value="1">PM</option>
+                  </select>
+            </div>
+
+        </div>
+    </span>
+    <span class="ending-time fonts">
+        <div class="enter-time">
+
+            <div class="enter-t1 ">
+                <input id="end-hour-5" placeholder="5" width="4px" height="3px" type="text" class="time1 text">
+            </div>
+
+            <span class="semi">:</span>
+
+            <div class="enter-t1 ">
+                <input id="end-minute-5" placeholder="00" type="text" class="time1 text">
+            </div> 
+
+            <div class="ampm">
+                <select  id="end-break-5" name="cars" class="ampm">
+                    <option class="am" value="0">AM</option>
+                    <option class="am" value="1">PM</option>
+                  </select>
+            </div>
+
+        </div>
+    </span>
+    <span class="break-time fonts">
+        <div class="en-tm">
+
+            <div class="enter-t1 ">
+                <input id="minus-hour-5" placeholder="4"width="4px" height="3px" type="text" class="time1 text">
+            </div>
+
+            <span class="semi">:</span>
+
+            <div class="enter-t1 ">
+                <input id="minus-minute-5" placeholder="00" type="text" class="time1 text">
+            </div> 
+
+            <!-- <div class="ampm">
+                <select  name="cars" class="ampm">
+                    <option class="am" value="am">AM</option>
+                    <option class="am" value="pm">PM</option>
+                  </select>
+            </div> -->
+
+        </div>
+    </span>
+    <span id="total-5" class="total-time fonts">
+       0.00
+    </span>
+</div>
+
+<!-- saturday  -->
+<div class="colom-head th">
+    <span class="day-head fonts">
+        Sat
+    </span>
+    <span class="start-hour fonts">
+        <div class="enter-time">
+
+            <div class="enter-t1 ">
+                <input id="start-hour-6" placeholder="8" width="4px" height="3px" type="text" class="time1 text">
+            </div>
+
+            <span class="semi">:</span>
+
+            <div class="enter-t1 ">
+                <input id="start-minute-6" placeholder="00" type="text" class="time1 text">
+            </div> 
+
+            <div class="ampm">
+                <select id="start-break-6"  name="cars" class="ampm">
+                    <option class="am" value="0">AM</option>
+                    <option class="am" value="1">PM</option>
+                  </select>
+            </div>
+
+        </div>
+    </span>
+    <span class="ending-time fonts">
+        <div class="enter-time">
+
+            <div class="enter-t1 ">
+                <input id="end-hour-6"  placeholder="5"  width="4px" height="3px" type="text" class="time1 text">
+            </div>
+
+            <span class="semi">:</span>
+
+            <div class="enter-t1 ">
+                <input id="end-minute-6" placeholder="00" type="text" class="time1 text">
+            </div> 
+
+            <div class="ampm">
+                <select id="end-break-6" name="cars" class="ampm">
+                    <option class="am" value="0">AM</option>
+                    <option class="am" value="1">PM</option>
+                  </select>
+            </div>
+
+        </div>
+    </span>
+    <span class="break-time fonts">
+        <div class="en-tm">
+
+            <div class="enter-t1 ">
+                <input  id="minus-hour-6" placeholder="4" width="4px" height="3px" type="text" class="time1 text">
+            </div>
+
+            <span class="semi">:</span>
+
+            <div class="enter-t1 ">
+                <input id="minus-minute-6" placeholder="00" type="text" class="time1 text">
+            </div> 
+
+            <!-- <div class="ampm">
+                <select  name="cars" class="ampm">
+                    <option class="am" value="am">AM</option>
+                    <option class="am" value="pm">PM</option>
+                  </select>
+            </div> -->
+
+        </div>
+    </span>
+    <span id="total-6" class="total-time fonts">
+       0.00
+    </span>
+</div>
+
+<!-- // total  -->
+<!-- <div class="colom-head tt">
+    <!-- <span class="day-head fonts">
+        Total
+    </span> -->
+    <!-- <span class="start-hour fonts">
+      starting time
+    </span>
+    <span class="ending-time fonts">
+      Ending time
+    </span> -->
+    <!-- <span class="break-time fonts">
+       total
+    </span>
+    <span class="total-time fonts">
+       total
+    </span>
+</div> --> 
+  <div class="totaltime">
+    <div class="right">
+        <span class="codebeuty">
+           CodeBeuty
+        </span>
+
+    </div>
+    <div class="left">
+        <span class="ttyme">
+  Total Hours
+        </span>
+        <span id="answer" class="totalwork ttyme">
+  0:00
+        </span>
+    </div>
+
+  </div>
+        </div>
+    </div>
+
+    <div class="btnrst">
+        <button id="calbtn" type="button" class="btn">Calculate</button>
+        <button id="clr" type="button" class="btn">Reset</button>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
